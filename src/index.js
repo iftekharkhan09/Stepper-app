@@ -2,8 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-import Root from './root';
+import App from './App';
 
-ReactDOM.render(<Root />, document.querySelector('#root'));
+ReactDOM.render(<App />, document.querySelector('#root'));
 
 reportWebVitals();

@@ -1,23 +1,26 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import WizardComponent from './Wizard';
+import LinearFlow from './linear-flow/linear-flow';
+import HorizontalNonLinearStepper from "./non-linear-flow/non-linear";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>
+        Movie Production
+      </h1>
+      <div className="container">
+        <WizardComponent />
+      </div>
+
+      <div className="container">
+        <LinearFlow />
+      </div>
+      <div className="container">
+        <HorizontalNonLinearStepper />
+      </div>
+
     </div>
   );
 }
