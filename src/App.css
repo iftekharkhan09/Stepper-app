@@ -1,9 +1,8 @@
 .step {
-  border: 1px solid #aaa;
-  margin: 50px auto;
+  margin: 0 20px;
   max-width: 800px;
   padding: 20px;
-  text-align: center;
+  /* text-align: center; */
 
 }
 .step img {
@@ -16,8 +15,9 @@ h1 {
   font-weight: 300;
   background-color: #3F51B5;
   color: white;
-  margin-top: 0;
-  padding: 20px;
+  margin: 0;
+  padding: 30px;
+  font-size: 1.6em;
 }
 button {
   box-sizing: content-box;
@@ -37,7 +37,8 @@ button:focus {
   outline: 0;
 }
 .actions {
-  text-align: center;
+  /* text-align: center; */
+  /* margin-left: 40px; */
 }
 .wizard-container {
   display: flex;
@@ -46,5 +47,5 @@ button:focus {
   flex-grow: 1;
 }
 .actions .button {
-  margin: 20px 10px 0;
+  margin: 20px 10px 0 0;
 }

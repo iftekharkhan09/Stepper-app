@@ -1,26 +1,19 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './App.css';
-import WizardComponent from './Wizard';
-import LinearFlow from './linear-flow/linear-flow';
-import HorizontalNonLinearStepper from "./non-linear-flow/non-linear";
-
+import WorkflowComponent from './Wizard';
+import wizardConfig from "./config/wizard";
+import MovieSelector from "./Movies/MovieSelector"
 function App() {
+  const [selectedMovie, setSelectedMovie] = useState(null);
   return (
     <div className="App">
       <h1>
-        Movie Production
+        DC Animated Movie Universe
       </h1>
+      <MovieSelector value={selectedMovie} onChange={setSelectedMovie} />
       <div className="container">
-        <WizardComponent />
+        { selectedMovie && <WorkflowComponent movie={selectedMovie} allSteps={wizardConfig} /> }
       </div>
-
-      <div className="container">
-        <LinearFlow />
-      </div>
-      <div className="container">
-        <HorizontalNonLinearStepper />
-      </div>
-
     </div>
   );
 }

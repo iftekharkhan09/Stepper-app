@@ -1,0 +1,30 @@
+.movie-selector {
+  display: block;
+  margin: 0;
+  padding: 0;
+  background: #f1f1f1;
+  padding: 20px;
+  border-bottom: 1px solid #333;
+  display: flex;
+  li {
+    display: block;
+    margin: 0;
+    padding: 0;
+    margin-right: 20px;
+    padding: 1px;
+    background: white;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    box-sizing: border-box;
+    cursor: pointer;
+    &.active {
+      background: lightseagreen;
+      border: 2px solid lightseagreen;
+    }
+  }
+  img {
+    height: 150px;
+    width: auto;
+    border-radius: 10px;
+  }
+}

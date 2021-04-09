@@ -1,0 +1,36 @@
+legend {
+  padding: 0;
+  display: table;
+  font-size: 1.2em;
+  margin-bottom: 1em;
+}
+fieldset {
+  border: 0;
+  padding: 0.01em 0 0 0;
+  margin: 0;
+  min-width: 0;
+}
+body:not(:-moz-handler-blocked) fieldset {
+  display: table-cell;
+}
+.form-group {
+  margin-bottom: 20px;
+}
+.control-label {
+  display: block;
+  margin-bottom: 5px;
+}
+.form-control {
+  display: block;
+  height: 40px;
+  width: 300px;
+  border-radius: 2px;
+  border: 1px solid #333;
+  font-size: 1.2em;
+  padding: 0 10px;
+}
+.crew-form {
+  button[type="submit"] {
+    display: none;
+  }
+}
